@@ -15,4 +15,6 @@ Full List:
 
 ## Adding a new council
 
-* Create a new issue with your council name and website
+* Create a new issue with the tag 'Council Addition'
+* Make sure the council has not already been added
+* include the council website
