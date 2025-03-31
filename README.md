@@ -6,6 +6,16 @@
 * An API that can return waste collection dates for your local council
 * Works for every bin
 * Uses Selenium for certain councils
+## Project Prerequisites
+
+To be able to run this project you may need to install **BeautifulSoup4** onto your pc if you don't have this already.
+\
+\
+To install, navigate to your terminal in your chosen IDE (Visual Studio Code) and type the following:
+###
+`pip3 install beautifulsoup4`
+###
+This should now run successfully. If it doesnt restart your IDE and try again. 
 ## Supported councils
 1 / 317 Principal Councils
 \
