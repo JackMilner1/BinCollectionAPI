@@ -1,10 +1,7 @@
 from bs4 import BeautifulSoup
 import requests
 
-def getData():
-    fullAddress = ""
-    user_postcode = ""
-    user_paon = ""
+def getData(fullAddress,user_postcode,user_paon):
     url = "https://uhtn-wrp.whitespacews.com/"
     session = requests.Session()
     hashedLink = session.get(url)
@@ -39,20 +36,12 @@ def getData():
 
 
     returnData = []
-    print("---------------------------------------------------------------------------")
-    print("-------------------------------Your Bin Data-------------------------------")
-    print("---------------------------------------------------------------------------")
+
     for element in u1s:
         DateAndType = element.find_all("li",recursive=False)
         # DateAndType[0] is an image so is unnecessary 
         date = DateAndType[1].text.replace("\n","")
         binType = DateAndType[2].text.replace("\n","")
-        print(f"{binType} is due at {date}")
         returnData = returnData + [(binType,date)]
-    print("---------------------------------------------------------------------------")
-    print("---------------------------------------------------------------------------")
-    print("---------------------------------------------------------------------------")
     
     return returnData # returns an array of (binType,date) pairs
-
-getData()
