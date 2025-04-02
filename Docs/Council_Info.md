@@ -1,6 +1,3 @@
-## Supported councils
-1 / 317 Principal Councils
-\
-\
-Full List:
-* North Hertfordshire District Council 
+## North Hertfordshire District Council 
+
+This requires a full address and postcode to work
